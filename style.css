@@ -1,5 +1,169 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
 
 * {
-    font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+.homeheader {
+  margin-top: 12px;
+  margin-inline: 7%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.homeheader > div:first-child > span:first-child,
+.homeheader > div:first-child > span:nth-child(2) {
+  font-size: 35px;
+  font-weight: 900;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.content-details,
+.content-details ul {
+  display: flex;
+}
+.content-details ul li {
+  list-style-type: none;
+  color: #423e3e;
+  padding-inline: 20px;
+  font-size: 22.93px;
+}
+.content-details > button {
+  border: 0.87px solid #fcc822;
+  background-color: transparent;
+  font-size: 22.93px;
+  color: #fcc822;
+  font-weight: 700;
+  padding-inline: 10px;
+}
+header > hr {
+  margin-top: 5px;
+  color: #ecece8;
+
+  margin-inline: 5%;
+}
+main {
+  display: flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 12px;
+  margin-inline: 30px;
+}
+.main-con-right {
+  margin-top: 7%;
+  /* margin-left: 5%; */
+}
+.main-con-right > h1 {
+  color: #333333;
+  font-size: 38.16px;
+  line-height: 43.54px;
+  /* font-weight:900; */
+  font-weight: bolder;
+}
+.main-con-right > p {
+  color: #211e1e;
+  font-size: 18px;
+  margin: 40px 0px 40px;
+  border-left: 2.16px solid #333333;
+  padding-left: 15px;
+}
+.main-con-right > button {
+  margin-top: 4px;
+  color: #ffffff;
+  border: none;
+  /* background-color: linear-gradient(95.34deg, #FCC822 0%, #FFCD2E 100%); */
+  box-shadow: 0px 10.450244903564453px 23.22276496887207px -6.966829299926758px #fbe18f;
+  background: linear-gradient(95.34deg, #fcc822 0%, #ffcd2e 100%);
+  font-size: 20px;
+  padding: 8px;
+  font-weight: 800;
+}
+.popup-div {
+  width: 100%;
+  height: 100%;
+  /* background: #FFFFFF; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.659);
+  padding: 10px;
+  /* display: flex; as inline is more prior not necessary here... */
+  justify-content: center;
+  align-items: center;
+}
+.popup-div >div:first-child{
+    width: 82%;
+    height: 80%;
+    background-color: #FFFFFF; 
+    position: relative;
+}
+.close {
+   font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+  
+  .popup-div > div:first-child > span.close:hover {
+    color: red; 
+  }
+  .popup-div > div:first-child > .content-info{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .popup-div > div:first-child > .content-info>h1{
+    font-size: 40px;
+    font-size:bolder;
+    padding-block: 20px;
+    
+
+  }
+  .popup-div > div:first-child > .content-info>h1,
+  .popup-div > div:first-child > .content-info>p{
+    color: #080808;
+    
+  }
+  .popup-div > div:first-child > .content-info>p{
+    font-size: 20px;  
+  }
+
+ 
+  .content-info1 {
+    display: flex;
+    margin-inline: 70px;
+}
+
+table {
+   
+    border-collapse: collapse;
+}
+
+td {
+    padding-inline: 30px;
+    padding-block: 20px;
+    width: 120px;
+    height: 60px;
+    /* border: 1px solid #ccc; */
+    position: relative;
+    text-align: center;
+}
+
+.color-box {
+    width: 220px;
+    height: 60px;
+    background-color: grey;
+    display: inline-block; /* Add this to make spans inline-block elements */
+}
+
+.close-btn {
+    display: none;
+    cursor: pointer;
+    /* Remove position values */
 }
